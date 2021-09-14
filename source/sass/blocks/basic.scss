@@ -1,0 +1,119 @@
+.page {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Montserrat Regular", "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: $black;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  background-image: url("../img/page-background.svg");
+  background-repeat: no-repeat;
+  background-size: 75.1556%;
+  background-position: center 2694px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: $desktop) {
+  .page-body {
+    background-image: none;
+  }
+}
+
+.button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  display: block;
+  padding: 30px 20px 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1.9px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $orange;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+
+  &:hover {
+    background-color: $orange-hover;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.7);
+  }
+}
+
+@media (max-width: $desktop) {
+  .button {
+    padding: 19px 20px 19px;
+    font-weight: 500;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 61%;
+}
+
+.outline {
+  border: 1px solid darkslategrey;
+
+  &--blue {
+    border: 1px solid aqua;
+  }
+
+  &--red {
+    border-color: tomato;
+  }
+}
+
+@media (max-width: $desktop) {
+  .container {
+    width: 94.53125%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    width: 90%;
+  }
+}

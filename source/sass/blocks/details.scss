@@ -1,0 +1,53 @@
+.country-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $dark;
+}
+
+.country-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(44, 46, 63, 0.7);
+  text-align: left;
+}
+
+.country-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+  appearance: none;
+  border: 0;
+  padding: 17px 54px 15px;
+}
+
+.country-feedback__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: $dark;
+}
+
+.country-feedback__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.country-feedback__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark;
+}

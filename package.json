@@ -6,23 +6,23 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "gulp": "4.0.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
+    "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "4.0.x",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -50,6 +50,19 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
-  }
+    "del": "^4.1.1",
+    "node-sass": "^6.0.1"
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GulnazBakirova/gulp-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GulnazBakirova/gulp-template/issues"
+  },
+  "homepage": "https://github.com/GulnazBakirova/gulp-template#readme"
 }

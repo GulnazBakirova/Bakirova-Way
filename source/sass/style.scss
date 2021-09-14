@@ -1,3 +1,19 @@
-h1 {
-  color: red;
-}
+@import "global/fonts";
+@import "global/variables";
+@import "mixins/mixins";
+
+/* ========= Блоки ======== */
+/* ========= Главная страница index.html ======== */
+
+
+@import "blocks/basic";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/gallery";
+@import "blocks/details";
+@import "blocks/country";
+@import "blocks/feedback";
+@import "blocks/price";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/modal";

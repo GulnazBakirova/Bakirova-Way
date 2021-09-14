@@ -1,0 +1,415 @@
+.price {
+  padding: 119px 0 80px;
+}
+
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-inner {
+  padding-top: 110px;
+  width: 24.5922%;
+}
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 9.2%;
+  width: 65.8%;
+}
+
+.price-item {
+  margin-right: 3.8754%;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.price-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 49px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $black-rock;
+
+  &::before {
+    bottom: -20px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $orange;
+    display: block;
+    position: absolute;
+    content: "";
+  }
+}
+
+.price-text {
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: rgba($color: $black-rock, $alpha: 0.7);
+}
+
+.price-contacts {
+  padding-left: 45px;
+}
+
+.price-call {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+}
+
+.price-link {
+  position: relative;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.price-phone {
+  position: absolute;
+  top: 0;
+  left: -43px;
+  fill: none;
+  stroke: $orange;
+}
+
+
+@media (max-width: $desktop) {
+  .price {
+    padding-top: 90px;
+    padding-bottom: 58px;
+
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  .price-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .price-inner {
+    margin-bottom: 27px;
+    padding: 0;
+    width: auto;
+    order: -1;
+  }
+
+  .price-item {
+    margin-right: 48px;
+  }
+
+  .price-title {
+    margin-bottom: 21px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .price-text {
+    margin-bottom: 33px;
+    padding: 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .price-contacts {
+    padding: 0;
+    text-align: center;
+  }
+
+  .price-call {
+    font-size: 18px;
+  }
+
+  .price-link {
+    font-size: 18px;
+    color: $orange;
+    text-decoration: underline;
+  }
+
+  .price-phone {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet) {
+  .price {
+    padding-top: 71px;
+  }
+
+  .price-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-inner {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    max-width: 450px;
+  }
+
+  .price-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .price-text {
+    margin-bottom: 17px;
+    padding: 0;
+  }
+
+  .price-item {
+    margin-right: 0;
+  }
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  width: 48.0558%;
+  min-height: 675px;
+  border: 3px solid rgba($color: $black-rock, $alpha: 0.3);
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: $orange;
+
+    svg {
+      color: $orange;
+    }
+
+    .offer-title,
+    .offer-price {
+      color: $orange;
+    }
+
+    .offer-inner {
+      border-color: rgba($color: $orange, $alpha: 0.5);
+    }
+  }
+}
+
+.offer-wrapper {
+  padding-top: 37px;
+  min-height: 565px;
+}
+
+.offer-header {
+  padding: 0 26px;
+}
+
+.offer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba($color: $black-rock, $alpha: 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.offer-title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -2px;
+  transition: color 0.3s ease;
+}
+
+.offer-price {
+  margin: 0;
+  margin-left: auto;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  transition: color 0.3s ease;
+}
+
+.offer-text {
+  margin: 0;
+  padding-right: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  color: $black-rock;
+}
+
+.offer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px 0;
+  min-height: 321px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.offer-item {
+  position: relative;
+  padding-left: 29px;
+  padding-right: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.offer--simple {
+  .offer-list {
+    min-height: 347px;
+  }
+
+  .offer-wrapper {
+      min-height: 576px;
+    }
+}
+
+.offer-check {
+  position: absolute;
+  left: -5px;
+  margin-top: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+.offer-button {
+  margin: 0 auto;
+  margin-top: auto;
+  width: 84.5%;
+  text-decoration: none;
+}
+
+
+@media (max-width: 1445px) {
+  .offer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-title {
+    margin-bottom: 10px;
+  }
+
+  .offer-price {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $desktop) {
+  .offer {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    width: 291px;
+    min-height: auto;
+    border: none;
+
+    &:hover {
+      .offer-wrapper {
+        border-color: $orange;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .offer-wrapper {
+    padding-top: 31px;
+    min-height: 579px;
+    border: 1px solid rgba($color: $black-rock, $alpha: 0.3);
+    border-bottom: none;
+    box-sizing: border-box;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .offer-header {
+    padding: 0 18px;
+  }
+
+  .offer-inner {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  .offer-title {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+
+  .offer-price {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 25px;
+  }
+
+  .offer-text {
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .offer-list {
+    padding: 24px 22px 0;
+  }
+
+  .offer-item {
+    padding-left: 30px;
+    padding-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .offer-button {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
